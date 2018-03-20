@@ -4,6 +4,7 @@
 [[img/mylayer.png]]
 
 # TOC links should be GitHub style anchors.
+add to ~/.emacs.d/private
 * Table of Contents                                        :TOC_4_gh:noexport:
 - [[#description][Description]]
 - [[#install][Install]]
