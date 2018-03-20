@@ -1,1 +1,4 @@
-(defun mypackage-printshit () (print "SHIT"))
+;;;###autoload
+(defun mypackage-printshit () (message "SHIT"))
+
+(provide 'mypackage)
