@@ -32,10 +32,15 @@
 (setq mylayer-packages
       '((mypackage :location local)))
 
+(defun prshit2 () (message "SHIT222222"))
+
 (defun mylayer/init-mypackage ()
   (use-package mypackage
     :init
     (progn
-      (spacemacs/set-leader-keys "aa" 'mypackage-printshit))))
+      (message ros-catkin-ws-path)
+      (spacemacs/declare-prefix "aR" "ros")
+      (spacemacs/set-leader-keys "aRa" 'mypackage-printshit)
+      (spacemacs/set-leader-keys "aRb" 'prshit2))))
 
 ;;; packages.el ends here
